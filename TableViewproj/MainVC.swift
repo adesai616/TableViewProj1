@@ -13,15 +13,17 @@ class MainVC: UIViewController {
 
     var signupButton = UIButton()
     var signinButton = UIButton()
-    var x = screen.width
     var y = screen.height*0.85
     var width = screen.width - 80
-    
-    
+    var greenColor = UIColor.init(red: 30, green: 215, blue: 96)
+    let signupVC = SignupVC()
+    let signinVC = SigninVC()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        self.view.backgroundColor = .gray
         setButtonProperties()
+        signupButton.addTarget(self, action: #selector(MainVC.signUpButtonPressed(_:)), for: .touchUpInside)
+        signinButton.addTarget(self, action: #selector(MainVC.signInButtonPressed(_:)), for: .touchUpInside)
         
     }
     
@@ -35,26 +37,31 @@ class MainVC: UIViewController {
         signupButton.layer.cornerRadius = 5
         signinButton.layer.cornerRadius = 5
        
-        signupButton.setTitle("Signup", for: UIControl.State.normal)
-        signinButton.setTitle("Sign In", for: UIControl.State.normal)
+        signupButton.setTitle("Signup", for: .normal)
+        signinButton.setTitle("Sign In", for: .normal)
         
         signupButton.titleLabel?.font = UIFont(name: "Arial", size: 18)
         signinButton.titleLabel?.font = UIFont(name: "Arial", size: 18)
         
-//        signupButton.titleLabel?.textColor = UIColor.black
-//        signinButton.titleLabel?.textColor = UIColor.black.ciColor
+        signupButton.setTitleColor(UIColor.white, for: .normal)
+        signinButton.setTitleColor(greenColor, for: .normal)
         
-        signupButton.backgroundColor = .green
-        signinButton.backgroundColor = .white
+        signupButton.backgroundColor   = greenColor
+        signinButton.backgroundColor   = .white
+       
+        signupButton.layer.borderColor = greenColor.cgColor
+        signupButton.layer.borderWidth = 2
         signinButton.layer.borderColor = UIColor.black.cgColor
         signinButton.layer.borderWidth = 2
-        
-        
-        
-        
     }
-    
+   
 
+    @IBAction func signUpButtonPressed(_ sender:UIButton!) {
+        navigationController?.pushViewController(signupVC, animated: true)
+    }
+    @IBAction func signInButtonPressed(_ sender:UIButton!) {
+        navigationController?.pushViewController(signinVC, animated: true)
+    }
 }
 
 

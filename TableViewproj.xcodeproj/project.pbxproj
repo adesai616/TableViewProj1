@@ -17,6 +17,8 @@
 		6928D5FF2371C1AF002E064C /* RocketLeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6928D5FE2371C1AF002E064C /* RocketLeagueVC.swift */; };
 		6938D07E2371F9F000B6FF6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6938D07D2371F9F000B6FF6F /* GoogleService-Info.plist */; };
 		69AA94462371FDC000946E04 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AA94452371FDC000946E04 /* MainVC.swift */; };
+		69FD500B2372158E000D1681 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FD500A2372158E000D1681 /* SignupVC.swift */; };
+		69FD500D2372166D000D1681 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FD500C2372166D000D1681 /* SigninVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		6938D07D2371F9F000B6FF6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6960BB55D8E91F2300558EFE /* Pods_TableViewproj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewproj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AA94452371FDC000946E04 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		69FD500A2372158E000D1681 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		69FD500C2372166D000D1681 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		FD92AADE45A99D5F04984324 /* Pods-TableViewproj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewproj.debug.xcconfig"; path = "Target Support Files/Pods-TableViewproj/Pods-TableViewproj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,8 @@
 				6928D5FE2371C1AF002E064C /* RocketLeagueVC.swift */,
 				6938D07D2371F9F000B6FF6F /* GoogleService-Info.plist */,
 				69AA94452371FDC000946E04 /* MainVC.swift */,
+				69FD500A2372158E000D1681 /* SignupVC.swift */,
+				69FD500C2372166D000D1681 /* SigninVC.swift */,
 			);
 			path = TableViewproj;
 			sourceTree = "<group>";
@@ -216,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6928D5FB23712D57002E064C /* UIView_ext.swift in Sources */,
+				69FD500B2372158E000D1681 /* SignupVC.swift in Sources */,
+				69FD500D2372166D000D1681 /* SigninVC.swift in Sources */,
 				69AA94462371FDC000946E04 /* MainVC.swift in Sources */,
 				6928D5F923712C81002E064C /* TableViewVC.swift in Sources */,
 				6928D5E523712B95002E064C /* AppDelegate.swift in Sources */,
